@@ -1,0 +1,75 @@
+#container {
+  width: 720px;
+  margin: 0 auto;
+}
+
+.posts-header {
+  text-align: center;
+  width: 720px;
+  margin: 60px auto 0;
+}
+
+.posts-header .logo {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.posts-header .tagline {
+  width: 70%;
+  margin: 20px auto 35px;
+}
+
+.posts {
+  list-style-type: none;
+  margin-top: 40px;
+}
+
+.post .post-title {
+  font-size: 24px;
+}
+
+.blog-author {
+  color: rgba(199,201,211,0.96);
+  font-style: italic;
+}
+
+.blog-author a {
+  color: rgba(142,146,166,0.96);
+}
+
+.blog-author a:hover {
+  text-decoration: underline;
+}
+
+.post {
+  border-top: 1px solid rgba(228,229,233,0.96);
+  padding: 40px 0;
+}
+
+.post:last-of-type {
+  border-bottom: 1px solid rgba(228,229,233,0.96);
+  padding: 40px 0;
+}
+
+.post .post-intro {
+  font-size: 1.1em;
+  font-weight: lighter;
+  margin: 15px 0 20px;
+}
+
+.post .post-author {
+  margin-left: 5px;
+  font-style: italic;
+}
+
+.post .post-date {
+  margin-left: 20px;
+}
+
+.post .post-author-image {
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  vertical-align: middle;
+}
