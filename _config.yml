@@ -1,0 +1,11 @@
+# Site settings
+title: Citrusbyte Blog
+email: sales@citrusbyte.com
+description: "Bits of data from Citrusbyte to use to navigate the ups and downs of a complex technology ecosystem."
+tagline: "Simplicity Driven"
+baseurl: ""
+url: "http://bits.citrusbyte.com"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
