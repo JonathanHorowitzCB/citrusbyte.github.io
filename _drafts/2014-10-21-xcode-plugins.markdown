@@ -7,18 +7,18 @@ categories: code
 author: lucholaf
 ---
 
-So Xcode is great: it provides everything you need to create an app, but not being open source or even missing explicit extension hooks, it lacks that flexibility that allows the community to adapt the tools to make them feel at home.
+So Xcode is great: it provides everything you need to create an app, but not being open source or not even having explicit extension hooks supported by Apple, it lacks that flexibility that allows the community to adapt the tools to make them grow and feel at home.
 
-While not official, you can extend Xcode through plugins. Some good info has been written on the topic and how you can boot it up. What I\'ll try to show is how to speed up and clear some misty aspects of the development.
+But not everything is bad news: while not official, you can extend Xcode through plugins. Some good info has been written on the topic and how you can boot it up. What I\'ll try to show is how to speed up and clear some misty aspects of the development.
 
 This may look like the Q&A I\'d have liked to have when started.
 
-What can be done with a plugin?
--------------------------------
+What can be done with a Xcode plugin?
+-------------------------------------
 
 You can make it work like Vim, add colors to the console, improve autocomplete, indent your code, color your variables, [auto import headers](https://github.com/lucholaf/Auto-Importer-for-Xcode) (*cough* self-promotion *cough*) and many many [more](http://nshipster.com/xcode-plugins/) things.
 
-Once your plugin is loaded you\'re in the same memory space Xcode is, so you could call any method on any instance, even [MethodSwizzling](http://cocoadev.com/MethodSwizzling) in case you want to stand in the way of Xcode calls.
+Once your plugin is loaded, you\'re in the same memory space Xcode is, so you could call any method on any instance, even [MethodSwizzling](http://cocoadev.com/MethodSwizzling) in case you want to stand in the way of Xcode calls.
 
 
 Do I have support from Apple?
@@ -34,7 +34,7 @@ Xcode has a plugin architecture that searches into `~/Library/Application Suppor
 
 After loading symbols from the object code, it will call `+ (void)pluginDidLoad:(NSBundle *)plugin` on found classes, so that is your entry door into Xcode.
 
-Let\'s present a common scenario: how to reach the editor component of the IDE. So after digging with the dumped headers and with the help of what other developers have found, you could get it like this:
+Let\'s present a common scenario: how to reach the editor component of the IDE. After digging with the dumped headers and with the help of what other developers have found, you could get it like this:
 
 {% highlight Objective-C linenos %}
 NSWindowController *currentWindowController = [[NSApp keyWindow] windowController];
@@ -64,9 +64,9 @@ You can use the Xcode 6 [plugin template](https://github.com/kattrali/Xcode-Plug
 How to debug and find information when there is no documentation from Apple?
 ----------------------------------------------------------------------------
 
-The most important tool to develop and debug Xcode plugins is well... you know... Xcode itself. Yes, although it\'s not that popular on the plugin community, you can debug Xcode from Xcode itself. [Here](http://www.blackdogfoundry.com/blog/debugging-your-xcode-plugin/) you can see how it\'s done.
+The most important tool to develop and debug Xcode plugins is well\.\.\. you know\.\.\. Xcode itself. Yes, although it\'s not that popular on the plugin community, you can debug Xcode from Xcode itself. [Here](http://www.blackdogfoundry.com/blog/debugging-your-xcode-plugin/) you can see how it\'s done.
 
-Now on Xcode 6 there is an **important** step to avoid crashing: you need to deselect 'Enable user interface debugging' from the options in the 'Run' scheme.
+Now on Xcode 6 there is an **important** step to avoid crashing: you need to deselect \'Enable user interface debugging\' from the options in the \'Run\' scheme.
 
 More rudimentary way to debug your plugin [here](https://coderwall.com/p/-mgtww).
 
@@ -89,15 +89,15 @@ So this other [post](http://www.blackdogfoundry.com/blog/common-xcode4-plugin-te
 
 #### Testing
 
-Nothing like the feeling of a good battery of tests that exercise your code while moving internal pieces around. Rudimentary `XCTest` with the help of `dispatch_groups` to help asynchronous code testing was all I needed to have a good coverage of the plugin.
+Nothing like the feeling of a good battery of tests that exercise your code while moving internal pieces around. Common usage of `XCTest` with the help of `dispatch_groups` to help asynchronous code testing was all I needed to have a good coverage of the plugin.
 
 #### Background threads
 
-Doing heavy stuff like reading project files all at once could really bring Xcode UX to his knees. So try to make use of `GCD` and `NSOperationQueues` when doing non-UI stuff. But don\'t try to paralleize too much if you\'re not careful, since creating lot of threads to then kill them is not a cheap resource. In my case, I created a NSOperationQueue with controlled concurrency for each project you have in the workspace, that allows to do the indexing of classes/protocols in the background without interrupting the UI thread.
+Doing heavy stuff like reading project files all at once could really bring Xcode UX to his knees. So try to make use of `GCD` and `NSOperationQueues` when doing non-UI stuff. But don\'t try to parallelize too much without paying good attention, since creating lot of threads to then kill them is not a cheap resource. In my case, I created a NSOperationQueue with controlled concurrency for each project you have in the workspace, that allows to do the indexing of classes/protocols in the background without interrupting the UI thread.
 
 #### Profile
 
-Profile CPU and memory, even the Xcode gauges that give some hint of memory and cpu peaks are useful while debugging. I measured indexing times with `- (NSTimeInterval)timeIntervalSinceDate:(NSDate *)anotherDate;` and then optimized the implementation in order to reduce it. And guess where 80% of the time was spent: I/O. Just checking for file existence was much more time consuming than matching a regexp in a good sized header. I/O can still be a bottleneck even with our fancy SSDs.
+Profile CPU and memory, even the Xcode gauges that give some hint of memory and cpu peaks are useful while debugging. I measured indexing times with `- (NSTimeInterval)timeIntervalSinceDate:(NSDate *)anotherDate;` and then optimized the implementation in order to reduce times. And guess where 80% of the time was spent: I/O. Just checking for file existence was much more time consuming than matching a regexp in a good sized header. I/O can still be a bottleneck even with our fancy SSDs.
 
 #### Use Autorelease Pools
 
