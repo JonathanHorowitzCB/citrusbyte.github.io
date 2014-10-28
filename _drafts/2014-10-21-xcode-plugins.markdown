@@ -107,4 +107,4 @@ Reduce the peak memory footprint if you need to process lot of info in a single 
 Conclusion
 ----------
 
-Go for it and improve Xcode! Objective-C (and maybe Swift) developers are going to thank you so much!
+Go for it and improve Xcode! Objective-C (and Swift) developers will thank you!
