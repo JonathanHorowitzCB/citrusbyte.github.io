@@ -1,0 +1,65 @@
+#container {
+  width: 720px;
+  margin: 0 auto;
+}
+
+.posts-header {
+  text-align: center;
+  width: 720px;
+  margin: 60px auto 0;
+}
+
+.posts-header .logo {
+  display: block;
+}
+
+.posts-header .tagline {
+  width: 70%;
+  margin: 25px 0 35px 2px;
+}
+
+.posts {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.post .post-title {
+  color: #999;
+  font-size: 48px;
+  font-weight: 100;
+}
+
+.post {
+  border-bottom: 1px solid #EAEAEA;
+  padding: 70px 10px 50px 10px;
+}
+
+.post .post-intro {
+  color: #666;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 12px 0 50px 2px;
+}
+
+.post-byline {
+  color: #999;
+  font-size: 13px;
+  font-family: "MuseoSans", Helvetica, Arial, sans-serif;
+}
+
+.post .post-author {
+  margin-left: 5px;
+}
+
+.post .post-author-image {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  vertical-align: middle;
+}
+
+footer#container {
+  font-size: 14px;
+  padding: 100px 0;
+  text-align: center;
+}
