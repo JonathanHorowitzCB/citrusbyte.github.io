@@ -56,3 +56,6 @@ footer#container {
   font-weight: bold;
   padding-bottom: 10px;
 }
+
+.post-content a { border-bottom: 1px solid #EAEAEA; }
+.post-content a:hover { border-bottom: 1px solid #FF5069; }
