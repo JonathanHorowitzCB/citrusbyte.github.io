@@ -11,65 +11,55 @@
 
 .posts-header .logo {
   display: block;
-  margin: 0 auto;
-  width: 300px;
 }
 
 .posts-header .tagline {
   width: 70%;
-  margin: 20px auto 35px;
+  margin: 25px 0 35px 2px;
 }
 
 .posts {
   list-style-type: none;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .post .post-title {
-  font-size: 24px;
-}
-
-.blog-author {
-  color: rgba(199,201,211,0.96);
-  font-style: italic;
-}
-
-.blog-author a {
-  color: rgba(142,146,166,0.96);
-}
-
-.blog-author a:hover {
-  text-decoration: underline;
+  color: #999;
+  font-size: 48px;
+  font-weight: 100;
 }
 
 .post {
-  border-top: 1px solid rgba(228,229,233,0.96);
-  padding: 40px 0;
-}
-
-.post:last-of-type {
-  border-bottom: 1px solid rgba(228,229,233,0.96);
-  padding: 40px 0;
+  border-bottom: 1px solid #EAEAEA;
+  padding: 70px 10px 50px 10px;
 }
 
 .post .post-intro {
-  font-size: 1.1em;
-  font-weight: lighter;
-  margin: 15px 0 20px;
+  color: #666;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 12px 0 50px 2px;
+}
+
+.post-byline {
+  color: #999;
+  font-size: 13px;
+  font-family: "MuseoSans", Helvetica, Arial, sans-serif;
 }
 
 .post .post-author {
   margin-left: 5px;
-  font-style: italic;
-}
-
-.post .post-date {
-  margin-left: 20px;
 }
 
 .post .post-author-image {
   width: 32px;
   height: 32px;
-  border-radius: 5px;
+  border-radius: 16px;
   vertical-align: middle;
+}
+
+footer#container {
+  font-size: 14px;
+  padding: 100px 0;
+  text-align: center;
 }

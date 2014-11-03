@@ -1,23 +1,23 @@
 body {
   -webkit-font-smoothing: antialiased;
   font-family: "freight-text-pro",sans-serif;
-  color: rgba(142,146,166,0.96);
+  color: #666;
 }
 
 h1 {
-  font-weight: bolder;
-  font-family: "museo-sans", Helvetica, Arial, sans-serif;
-  color: rgba(46,48,58,0.96);
+  font-weight: bold;
+  font-family: "MuseoSans", Helvetica, Arial, sans-serif;
+  color: #666;
   font-size: 48px;
 }
 
 a {
-  color: rgba(46,48,58,0.96);
+  color: #666;
   text-decoration: none;
 }
 
 a:hover {
-  color: #df4255;
+  color: #FF5069;
   -webkit-transition: color 0.1s linear;
   -moz-transition: color 0.1s linear;
   transition: color 0.1s linear;
