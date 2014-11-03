@@ -12,7 +12,9 @@ layout: default
         <p class="post-intro">{{ post.description }}</p>
         <div class="post-byline">
           <img class="post-author-image" src="{{ site.data.team[post.author].image}}">
-          <span class="post-author">by <a href="" rel="author">{{ site.data.team[post.author].name }}</a></span>
+          <span class="post-author">
+            by <a href="{{ site.data.team[post.author].link }}" rel="author" target="_blank">{{ site.data.team[post.author].name }}</a>
+          </span>
           <span class="post-date">{% include date.html %}</span>
         </div>
       </article>

@@ -1,12 +1,12 @@
 dkullmann:
   image: "/images/team/david-kullmann.png"
   name: "David Kullmann"
-  twitter: "kullmannasaurus"
+  link: "https://twitter.com/kullmannasaurus"
 inkel:
   image: "images/team/leandro-lopez.png"
   name: "Leandro Lopez"
-  twitter: "inkel"
+  link: "https://github.com/inkel"
 lucholaf:
   image: "images/team/luis-floreani.png"
   name: "Luis Floreani"
-  twitter: "lucholaf"
+  link: "https://github.com/lucholaf"
