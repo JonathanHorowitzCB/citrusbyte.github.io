@@ -3,10 +3,10 @@ dkullmann:
   name: "David Kullmann"
   twitter: "kullmannasaurus"
 inkel:
-  image: "images/team/leandro-lopez.png"
+  image: "/images/team/leandro-lopez.png"
   name: "Leandro Lopez"
   twitter: "inkel"
 lucholaf:
-  image: "images/team/luis-floreani.png"
+  image: "/images/team/luis-floreani.png"
   name: "Luis Floreani"
   twitter: "lucholaf"
