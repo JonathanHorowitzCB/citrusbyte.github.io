@@ -1,24 +1,46 @@
 body {
   -webkit-font-smoothing: antialiased;
   font-family: "freight-text-pro",sans-serif;
-  color: #666;
+  color: #666666;
 }
 
 h1 {
-  font-weight: bold;
+  color: #666666;
   font-family: "MuseoSans", Helvetica, Arial, sans-serif;
-  color: #666;
   font-size: 48px;
+  font-weight: 100;
 }
 
+/* LINKS
+--------------------------------------------------- */
 a {
-  color: #666;
+  color: #666666;
   text-decoration: none;
+  border-bottom: 1px solid #EAEAEA;
 }
 
 a:hover {
+  border-bottom: 1px solid #FF5069;
   color: #FF5069;
   -webkit-transition: color 0.1s linear;
   -moz-transition: color 0.1s linear;
   transition: color 0.1s linear;
+}
+
+/* HEADER
+--------------------------------------------------- */
+.posts-header {
+  width: 720px;
+  margin: 70px auto 0;
+}
+
+img.logo {
+  width: 170px;
+}
+
+/* CONTENT
+--------------------------------------------------- */
+#container {
+  width: 720px;
+  margin: 0 auto;
 }
