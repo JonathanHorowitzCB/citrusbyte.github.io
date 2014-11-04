@@ -1,7 +1,7 @@
 body {
   -webkit-font-smoothing: antialiased;
   font-family: "freight-text-pro",sans-serif;
-  color: #666666;
+  color: #333333;
 }
 
 h1 {
@@ -11,10 +11,14 @@ h1 {
   font-weight: 100;
 }
 
+h4 {
+  font-weight: bold;
+}
+
 /* LINKS
 --------------------------------------------------- */
 a {
-  color: #666666;
+  color: #333333;
   text-decoration: none;
 }
 
