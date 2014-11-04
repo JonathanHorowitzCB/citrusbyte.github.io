@@ -36,7 +36,7 @@ After loading symbols from the object code, it will call `+ (void)pluginDidLoad:
 
 Let\'s present a common scenario: how to reach the editor component of the IDE. After digging with the dumped headers and with the help of what other developers have found, you could get it like this:
 
-{% prism objectivec linenos %}
+{% highlight Objective-C linenos %}
 NSWindowController *currentWindowController = [[NSApp keyWindow] windowController];
 if ([currentWindowController isKindOfClass:NSClassFromString(@"IDEWorkspaceWindowController")]) {
     IDEWorkspaceWindowController *workspaceController = (IDEWorkspaceWindowController *)currentWindowController;
@@ -44,15 +44,15 @@ if ([currentWindowController isKindOfClass:NSClassFromString(@"IDEWorkspaceWindo
     IDEEditorContext *editorContext = [editorArea lastActiveEditorContext];
     IDESourceCodeEditor *editor = [editorContext editor];
 }
-{% endprism %}
+{% endhighlight %}
 
 Look how `IDESourceCodeEditor` exposes a `NSTextView` instance, a vanilla component you can use when manipulating the source code in the editor.
 
 Generally speaking, you\'ll deal with situations like the one from above, where you need to pick a specific control instance in the IDE in order to handle the control. Another common pattern is to listen for notifications and extract info from them (E.g: the name of the file that was just saved). A good start is to listen to all notifications of which are a lot. It\'s eye-opening to view the log and see the cascade of notifications when a single key is pressed in the editor, you should try it if you haven\'t before.
 
-{% prism objectivec linenos %}
+{% highlight Objective-C linenos %}
 [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationListener:) name:nil object:nil];
-{% endprism %}
+{% endhighlight %}
 
 
 Where should I start from?
