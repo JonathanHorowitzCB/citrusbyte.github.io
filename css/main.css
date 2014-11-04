@@ -1,27 +1,6 @@
-#container {
-  width: 720px;
-  margin: 0 auto;
-}
-
-.posts-header {
-  text-align: center;
-  width: 720px;
-  margin: 60px auto 0;
-}
-
-.posts-header .logo {
-  display: block;
-}
-
-.posts-header .tagline {
-  width: 70%;
-  margin: 25px 0 35px 2px;
-}
-
-.posts {
-  list-style-type: none;
-  margin-top: 20px;
-}
+/* POSTS LIST
+--------------------------------------------------- */
+ul.posts { list-style-type: none; }
 
 .post .post-title {
   color: #999;
@@ -31,7 +10,7 @@
 
 .post {
   border-bottom: 1px solid #EAEAEA;
-  padding: 70px 10px 50px 10px;
+  padding: 75px 0 50px 0;
 }
 
 .post .post-intro {
@@ -62,4 +41,29 @@ footer#container {
   font-size: 14px;
   padding: 100px 0;
   text-align: center;
+}
+
+/* POST
+--------------------------------------------------- */
+.post-content {
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 50px;
+}
+
+.post-content p {
+  margin-bottom: 30px;
+}
+
+.post-content h2 {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.post-content a {
+  border-bottom: 1px solid #CCCCCC;
+}
+.post-content a:hover {
+  border-bottom: 1px solid #FF5069;
 }
