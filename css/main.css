@@ -67,3 +67,8 @@ footer#container {
 .post-content a:hover {
   border-bottom: 1px solid #FF5069;
 }
+
+.post-content pre {
+    font-family: monospace;
+    overflow: scroll;
+}
