@@ -9,4 +9,3 @@ url: "http://bits.citrusbyte.com"
 # Build settings
 markdown: kramdown
 permalink: pretty
-highlighter: pygments
