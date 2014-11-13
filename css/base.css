@@ -52,3 +52,19 @@ img.logo { width: 170px; }
   margin: 0 auto;
   max-width: 720px;
 }
+
+/* LISTS
+--------------------------------------------------- */
+
+ol, ul {
+  list-style-position: inside;
+  margin-bottom: 30px;
+}
+ol {
+  list-style: decimal;
+  padding-left: 22px;
+}
+ul {
+  list-style: disc;
+  padding-left: 20px;
+}
