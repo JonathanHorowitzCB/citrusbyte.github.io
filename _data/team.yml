@@ -18,3 +18,8 @@ wbelk:
   image: "/images/team/william-belk.png"
   name: "William Belk"
   link: "http://twitter.com/wbelk/"
+burlesona:
+  image: "/images/team/andrew-burleson.png"
+  name: "Andrew Burleson"
+  link: "https://github.com/burlesona"
+
