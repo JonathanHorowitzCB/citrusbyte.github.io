@@ -8,10 +8,10 @@ author: sborrazas
 ---
 Frontend work is usually a rather messy job if things are not organized
 properly from the start. A CSS styleguide is a useful tool for establishing 
-establishing common criteria for the team, in terms of both CSS coding 
-syntax and CSS architecture.
+common criteria for the team, in terms of both CSS coding syntax and CSS
+architecture.
 
-The CSS styleguide I created is one that I use for all frontend projects. It
+The CSS styleguide we created is one that I use for all frontend projects. It
 establishes an unambigous way of writing CSS selectors and declarations taking
 into account higher level tools like LESS or SCSS which are used in most of
 nowadays projects.
