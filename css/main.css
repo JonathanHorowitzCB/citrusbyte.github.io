@@ -1,6 +1,9 @@
 /* POSTS LIST
 --------------------------------------------------- */
-ul.posts { list-style-type: none; }
+ul.posts {
+	list-style-type: none;
+	margin-left:0;
+}
 
 .post .post-title {
   color: #999;
@@ -9,7 +12,7 @@ ul.posts { list-style-type: none; }
 }
 
 .post {
-  border-bottom: 1px solid #EAEAEA;
+  border-bottom: 1px solid #ddd;
   padding: 75px 0 50px 0;
 }
 
@@ -49,6 +52,12 @@ footer#container {
   font-size: 16px;
   line-height: 26px;
   margin-top: 50px;
+	word-wrap: break-word;
+}
+.post-content h1 {
+	font-size:34px;
+	line-height:1.2;
+	margin-bottom:20px;
 }
 
 .post-content p {
@@ -71,4 +80,8 @@ footer#container {
 .post-content pre {
     font-family: monospace;
     overflow: scroll;
+}
+
+.share-buttons span {
+	margin-bottom:8px;
 }
