@@ -77,13 +77,3 @@ Send and Reply to Message
 To start we've moved all the disclaimer and help text to the right column. We also end up with a the form above the fold.  We've added a special 'Reply' view that shows the existing conversation above the form so we have context when replying. We've also made the action buttons more visible.
 
 [![KP.org Send and Reply to Message before and after design](/images/wbelk/kp-reply.gif)](/images/wbelk/kp-reply.gif)
-
-
-
-
-
-
-
-
-
-
