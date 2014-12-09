@@ -1,8 +1,14 @@
+/* BASE
+--------------------------------------------------- */
+html,
 body {
   -webkit-font-smoothing: antialiased;
   font-family: "freight-text-pro", sans-serif;
   color: #333333;
   font-size: 18px;
+  height: 100%;
+  min-height: 100%;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
