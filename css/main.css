@@ -7,7 +7,7 @@ ul.posts {
 
 .post .post-title {
   color: #999;
-  font-size: 48px;
+  font-size: 2.55em;
   font-weight: 100;
 }
 
@@ -18,14 +18,14 @@ ul.posts {
 
 .post .post-intro {
   color: #666;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 1.125em;
+  line-height: 1.3em;
   margin: 12px 0 50px 2px;
 }
 
 .post-byline {
   color: #999;
-  font-size: 13px;
+  font-size: 0.875em;
   font-family: "MuseoSans", Helvetica, Arial, sans-serif;
 }
 
@@ -41,7 +41,7 @@ ul.posts {
 }
 
 footer#container {
-  font-size: 14px;
+  font-size: 0.875em;
   padding: 100px 0;
   text-align: center;
 }
@@ -49,8 +49,8 @@ footer#container {
 /* POST
 --------------------------------------------------- */
 .post-content {
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1.125em;
+  line-height: 1.55em;
   margin-top: 50px;
   word-wrap: break-word;
 }
@@ -60,13 +60,25 @@ footer#container {
   margin-bottom:20px;
 }
 
+.post-content p code {
+  background: #F5F5F5;
+  border: 1px solid #EAEAEA;
+  border-radius: 5px;
+  color: #666666;
+  font-family: monospace;
+  font-size: 0.83em;
+  margin: 0 2px;
+  padding: 2px 4px 4px 4px;
+}
+
 .post-content p {
-  margin-bottom: 30px;
+  margin-bottom: 2em;
 }
 
 .post-content h2 {
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: bold;
+  line-height: 1.25em;
   padding-bottom: 10px;
 }
 
@@ -74,12 +86,17 @@ footer#container {
   border-bottom: 1px solid #CCCCCC;
 }
 .post-content a:hover {
-  border-bottom: 1px solid #FF5069;
+  border-bottom: 1px solid #FF9FAD;
 }
 
 .post-content pre {
+    background: #F5F5F5;
+    border-radius: 8px;
     font-family: monospace;
+    font-size: 0.75em;
+    margin: 5px 0 40px 0;
     overflow: scroll;
+    padding: 20px 30px;
 }
 
 .share-buttons span {
