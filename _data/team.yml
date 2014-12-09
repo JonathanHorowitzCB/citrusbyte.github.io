@@ -10,3 +10,11 @@ lucholaf:
   image: "/images/team/luis-floreani.png"
   name: "Luis Floreani"
   link: "https://github.com/lucholaf"
+sborrazas:
+  image: "/images/team/sebastian-borrazas.png"
+  name: "Sebastian Borrazas"
+  link: "https://github.com/sborrazas"
+wbelk:
+  image: "/images/team/william-belk.png"
+  name: "William Belk"
+  link: "http://twitter.com/wbelk/"
