@@ -102,3 +102,11 @@ footer#container {
 .share-buttons span {
 	margin-bottom:8px;
 }
+
+blockquote {
+  padding: 20px;
+  background: #EEE;
+  margin-bottom: 30px;
+}
+
+blockquote p:last-child { margin-bottom: 0; }
