@@ -1,6 +1,9 @@
 /* RESPONSIVE
 --------------------------------------------------- */
 @media screen and (max-width: 800px) {
+  body {
+    font-size: 16px;
+  }
 	#container {
 		padding:0 4%;
 		overflow:hidden;
@@ -13,21 +16,11 @@
 		padding-top:20px;
 		padding-bottom:20px;
 	}
-	.post .post-title, .post-header h1 {
-		font-size:30px;
-	}
 	.post-intro, .post .post-intro {
 		line-height:1.2;
 		margin-bottom:30px;
 	}
-	.post-byline {
-		font-size:10px;
-	}
 	.post-content {
-		font-size:16px;
 		margin-top:30px;
-	}
-	.post-content h1 {
-		font-size:30px;
 	}
 }
