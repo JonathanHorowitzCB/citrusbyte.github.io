@@ -58,7 +58,7 @@ then any kind of box will do for your keyboard / mouse surface. Creating a
 quick hack like this is one of the best ways to test this idea without spending
 too much money or time.
 
-![Experiment 1](/images/posts/2014-11-13-sd-test-1.jpg)
+<img class="centered bordered" title="Experiment 1" alt="Experiment 1" src="/images/posts/2014-11-13-sd-test-1.jpg">
 
 This difference between standing and sitting monitor height is one of the
 trickiest things about a standing desk setup - your monitor’s normal stand is
@@ -156,7 +156,7 @@ couple books and a desktop pad to add about half an inch for the keyboard
 height. I used a little step-stool as a monitor stand, upon which my 27” Cinema
 Display and MacBook Pro fit quite nicely.
 
-![Improvized Desk](/images/posts/2014-11-13-sd-test-2.jpg)
+<img class="centered bordered" title="Improvized Desk" alt="Improvized Desk" src="/images/posts/2014-11-13-sd-test-2.jpg">
 
 This setup served me well for about a year. As you can imagine, the big
 drawers in the dresser are an easy place to keep all your gear, and the monitor
@@ -185,8 +185,8 @@ something with a built-in monitor platform and some clever fold-out leaf that
 would extend the work surface. I modeled this in [SketchUp][7], which is a
 fantastic 3D-drafting tool for this sort of thing.
 
-![First Round of Designs](/images/posts/2014-11-13-sd-designs-1.png)
-![Second Round of Designs](/images/posts/2014-11-13-sd-designs-2.png)
+<img class="centered" title="First round of designs" alt="First round of designs" src="/images/posts/2014-11-13-sd-designs-1.png">
+<img class="centered" title="Second round of designs" alt="Second round of designs" src="/images/posts/2014-11-13-sd-designs-2.png">
 
 After consulting with some professional wood-workers about the feasibility of
 these designs, I reconsidered. First, building in a monitor platform means it
@@ -197,12 +197,12 @@ flat surface, and as this was my first major woodworking project just doing a
 
 I went back to the drawing board and simplified the concept quite a bit.
 
-![Third Round of Designs](/images/posts/2014-11-13-sd-designs-3.png)
+<img class="centered" title="Third round of designs" alt="Third round of designs" src="/images/posts/2014-11-13-sd-designs-3.png">
 
 In hindsight, this was the best decision I made. The final design looked like
 this:
 
-![Final Design](/images/posts/2014-11-13-sd-design-final.png)
+<img class="centered" title="Final Design" alt="Final Design" src="/images/posts/2014-11-13-sd-design-final.png">
 
 I originally planned for a 24x44” work surface. When I actually got in the shop
 and started cutting, I decided to go with a 25x48” surface. There’s a lot to be
@@ -249,13 +249,13 @@ For the table top this meant individual strips roughly 1.3” x 1.5” x 44”. 
 needed 14 strips total, which I glued together (short side to short side) and
 then cut to length to make a “butcher block” table top.
 
-![Butcher Block Glue Up](/images/posts/2014-11-13-sd-const-1.jpg)
+<img class="centered bordered" title="Butcher Block Glue Up" alt="Butcher Block Glue Up" src="/images/posts/2014-11-13-sd-const-1.jpg">
 
 The second step was to make the crossbeams and leg beams, which I cut down to
 approximately 1.75” x 3”, varying lengths. This was the easiest step of the
 whole process.
 
-![Legs and Crossbeams](/images/posts/2014-11-13-sd-const-2.jpg)
+<img class="centered bordered" title="Legs and Crossbeams" alt="Legs and Crossbeams" src="/images/posts/2014-11-13-sd-const-2.jpg">
 
 The hardest step was making the finger joints for the legs. I decided to make
 square legs for the desk which would be finger joined together. It took a lot of
@@ -276,7 +276,7 @@ One of the priorities for me was that the desk be able to be disassembled and
 fit into my car. I designed it so that the desk could be assembled from five
 pieces: 2 legs, 2 crossbeams, and the top.
 
-![Five pieces](/images/posts/2014-11-13-sd-const-3.jpg)
+<img class="centered bordered" title="Five pieces" alt="Five pieces" src="/images/posts/2014-11-13-sd-const-3.jpg">
 
 To join the legs and crossbeams, I installed two hangar bolts on the top of each
 leg, and drilled an appropriate bolt hole on the crossbeams so that I could
@@ -284,13 +284,13 @@ attach a washer and nut on the other side, without sticking up from the beam.
 This allows the table to to sit flush on top of the beam, covering the bolt
 hole.
 
-![Hangar Bolts](/images/posts/2014-11-13-sd-const-bolts.jpg)
+<img class="centered bordered" title="Hangar Bolts" alt="Hangar Bolts" src="/images/posts/2014-11-13-sd-const-bolts.jpg">
 
 When the bolt is ratcheted on tight there’s very little wiggle in this desk,
 despite the lack of extra cross beams, so this aspect of the design worked out
 quite well.
 
-![Frame assembled](/images/posts/2014-11-13-sd-const-4.jpg)
+<img class="centered bordered" title="Frame assembled" alt="Frame assembled" src="/images/posts/2014-11-13-sd-const-4.jpg">
 
 To attach the top to the crossbeams I used six desktop fasteners  (aka “figure
 eight” fasteners). These allow a little bit of horizontal expansion and
@@ -320,9 +320,9 @@ for my peace of mind.
 
 ## Final Results
 
-![Final desk](/images/posts/2014-11-13-sd-final-1.jpg)
-![Close up on the finger joints](/images/posts/2014-11-13-sd-final-2.jpg)
-![Before and After](/images/posts/2014-11-13-sd-final-3.jpg)
+<img class="centered bordered" title="Final desk" alt="Final desk" src="/images/posts/2014-11-13-sd-final-1.jpg">
+<img class="centered bordered" title="Close up on the finger joints" alt="Close up on the finger joints" src="/images/posts/2014-11-13-sd-final-2.jpg">
+<img class="centered bordered" title="Before and After" alt="Before and After" src="/images/posts/2014-11-13-sd-final-3.jpg">
 
 The final result looks very nice, and has earned me a lot of compliments.
 More importantly, it’s an excellent work surface that suits my standing work

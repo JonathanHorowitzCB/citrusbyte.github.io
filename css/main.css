@@ -60,6 +60,20 @@ footer#container {
 	margin-bottom:20px;
 }
 
+
+.post-content img.centered {
+  display: block;
+  margin: 0 auto 1em;
+}
+
+.post-content img.full {
+  width: 100%;
+}
+
+.post-content img.bordered {
+  border: 1px solid #333;
+}
+
 .post-content p code {
   background: #F5F5F5;
   border: 1px solid #EAEAEA;
