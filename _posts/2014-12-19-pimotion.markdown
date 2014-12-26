@@ -1,31 +1,38 @@
 ---
 layout: post
-title:  "Motion detection with the Raspberry PI"
-description: "Explore motion detecting using two methods: manual calculations and H.264 motion vectors"
+title:  "Motion detection with Raspberry PI"
+description: "Explore motion detection using two methods: manual calculations and H.264 motion vectors."
 date:   2014-12-19 12:52:00
 categories: code 
 author: jhenkens
 ---
 
-Motion detection is a tricky problem to solve, the key is to balance the sensitivity so that it doesn't catch light changes but only catches movement in the frame. In this article I will describe 2 methods to achieve motion detection, calculating frame differences manually and harnessing the power of the H.264 encoder.
+Motion detection is a tricky problem to solve, the key is to balance sensitivity so that it doesn't catch light changes but still catches movements in the frame. In this article I will describe 2 methods to achieve motion detection: calculating frame differences manually and harnessing the power of the H.264 encoder. Finally, we'll store the results online using using a connected devices (Internet-of-Things) platform from AT&T.
+
+Full source code is available at the end of the article.
 
 # The setup
 
-Raspberry PI is a low cost single-board computer that is built with the intention of teaching computer science in schools. With the camera module and the small footprint of the Raspberry PI this setup is the perfect platform for our motion detection system.
+[Raspberry PI](http://www.raspberrypi.org/) is a low cost single-board computer that is built with the intention of teaching computer science in schools. With the [camera module](http://www.raspberrypi.org/products/camera-module/) and the small footprint of the Raspberry PI this setup is the perfect platform for our motion detection system.
+
+Don't have a Raspberry Pi or the camera module? You can get them here:
+
+* [Raspberry Pi Model B+ (B PLUS) 512MB Computer Board](http://www.amazon.com/Raspberry-Pi-Model-512MB-Computer/dp/B00LPESRUK/ref=sr_1_2?s=pc&ie=UTF8&qid=1419632605&sr=1-2&keywords=raspberry+pi) on Amazon
+* [Raspberry PI 5MP Camera Board Module](http://www.amazon.com/Raspberry-5MP-Camera-Board-Module/dp/B00E1GGE40/ref=sr_1_1?s=pc&ie=UTF8&qid=1419632621&sr=1-1&keywords=raspberry+pi+camera+module) on Amazon
 
 # Plan of action
 
 The goal of the project is to monitor the camera for movement. Once we detect movement in the video stream we will switch over to still camera mode and take photos over the span of several seconds to capture the movement in high resolution snapshots.
 
-We will be using Python as the programming language. It is a nice clean language, a large collection of community developed libraries and great support.
+We will be using Python as the programming language. Python is a clean language, has a large collection of community developed libraries, and has great support.
 
 > Fun fact: Eben Upton and his team envisioned Python as the introduction to programming Raspberry Pi's which is where the "Pi" in the name comes from.
 
 # Method 1: Manual snapshots
 
-Manual motion calculation requires us to take continuous photos. We use 2 buffers, one contains the current raw data and the other one contains the previous frame. Each frame we compare the 2 buffers against each other. For performance reasons, the snapshots taken every second are small thumbnail sized photos.
+Manual motion calculation requires us to take continuous photos. We use 2 buffers, one contains the current raw data and the other one contains the previous frame. After capturing each frame we compare the 2 buffers against each other. For performance reasons the snapshots taken every second are small thumbnail sized photos.
 
-We loop through all the pixels in the green channel of the 2 buffers. Each pixel value from frame 1 is compared to the matching pixel in frame 2. If the value differs more than the threshold the pixel is considered different and added to the count. Once this process is completed and the total number of changed pixels is higher than the sensitivity we consider movement to be detected and take a full snapshot.
+We loop through all the pixels in the green channel of the 2 buffers because the green channel is the highest quality channel. Each pixel value from frame 1 is compared to the matching pixel in frame 2. If the value differs more than the threshold the pixel is considered different and added to the count. Once this process is completed and the total number of changed pixels is higher than the sensitivity we consider movement to be detected and take a full snapshot.
 
 {% highlight Python linenos %}
 threshold = 10
@@ -67,16 +74,15 @@ while (True):
     buffer1 = buffer2
 {% endhighlight %}
 
+## Manual Snapshot Final Thoughts
 
-## Conclusions:
-
-The idea is simple and straightforward but there is one big disadvantage to this approach. Calculating movement by comparing raw pixel values makes it overly sensitive to static, brightness changes and minor movements. These are not the movements that we like to detect. This results in a lot of false positives.
+The idea is simple and straightforward but there is one big disadvantage to this approach. Calculating movement by comparing raw pixel values makes it overly sensitive to static, brightness changes and minor movements. These are not the movements that we like to detect which results in a lot of false positives.
 
 # Method 2: Using motion vectors
 
-The first thing I wanted to do is to prevent using shell commands, after digging I found the [picamera python library](http://picamera.readthedocs.org/en/release-1.8/) that achieves this requirement.
+The first thing I wanted to do is to prevent using shell commands, after researching online I found the [picamera python library](http://picamera.readthedocs.org/en/release-1.8/) that achieves this requirement.
 
-The Raspberry PI's camera is capable of outputting the motion vector estimated that the H.264 encoder calculates while compressing video. We will harness this data by outputting it to a separate video channel stream.
+The Raspberry PI's camera is capable of outputting the motion vector estimates that the H.264 encoder calculates while compressing video. We will harness this data by outputting it to a separate video channel stream.
 
 {% highlight Python linenos %}
 class PiMotion:
@@ -194,7 +200,7 @@ class CaptureHandler:
 {% endhighlight %}
 
 
-## Conclusions:
+## Motion Vector Method Final Thoughts
 
 Using the motion channel was a good decision, it removes the disadvantages of brightness changes and noise in the pixel data by harnessing the power of the H.264 encoder. By using the picamera library we also removed the use of shell commands.
 
@@ -282,6 +288,6 @@ Using the Raspberry PI as the platform is a perfect fit for a motion detection s
 
 Using the motion vector data channel from the H.264 encoder allowed us to detect motion with a fairly accurate result. The python lib picamera made using the various Pi camera module functions a breeze.
 
-With AT&T's awesome M2X python library, uploading our final montage photo to our device was possibly with just 3 lines of code. 
+With AT&T's M2X python library, uploading our final montage photo to our device was possibly with just 3 lines of code. 
 
 The full source code with installation instructions can be found on [https://github.com/citrusbyte/pimotion](https://github.com/citrusbyte/pimotion).
