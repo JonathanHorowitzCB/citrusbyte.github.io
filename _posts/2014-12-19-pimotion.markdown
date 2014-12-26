@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Motion detection with the Raspberry PI"
-description: "A motion detection application that runs on the Raspberry PI."
+description: "Explore motion detecting using two methods: manual calculations and H.264 motion vectors"
 date:   2014-12-19 12:52:00
 categories: code 
 author: jhenkens
@@ -9,19 +9,19 @@ author: jhenkens
 
 Motion detection is a tricky problem to solve, the key is to balance the sensitivity so that it doesn't catch light changes but only catches movement in the frame. In this article I will describe 2 methods to achieve motion detection, calculating frame differences manually and harnessing the power of the H.264 encoder.
 
-The setup
----------
+# The setup
 
 Raspberry PI is a low cost single-board computer that is built with the intention of teaching computer science in schools. With the camera module and the small footprint of the Raspberry PI this setup is the perfect platform for our motion detection system.
 
-Plan of action
---------------
+# Plan of action
+
 The goal of the project is to monitor the camera for movement. Once we detect movement in the video stream we will switch over to still camera mode and take photos over the span of several seconds to capture the movement in high resolution snapshots.
 
-We will be using Python as the programming language. It is a nice clean language, a large collection of community developed libraries and great support. Fun fact, Eben Upton and his team imagined to use Python as the introduction to programming and it is the reason why Pi is called the Pi.
+We will be using Python as the programming language. It is a nice clean language, a large collection of community developed libraries and great support.
 
-Version 1: Manual snapshots
----------------------------
+> Fun fact: Eben Upton and his team envisioned Python as the introduction to programming Raspberry Pi's which is where the "Pi" in the name comes from.
+
+# Method 1: Manual snapshots
 
 Manual motion calculation requires us to take continuous photos. We use 2 buffers, one contains the current raw data and the other one contains the previous frame. Each frame we compare the 2 buffers against each other. For performance reasons, the snapshots taken every second are small thumbnail sized photos.
 
@@ -41,7 +41,7 @@ def captureFrame():
     imageData.close()
     return im, buffer
 
-# Capture the first frame
+## Capture the first frame
 image1, buffer1 = captureFrame()
 
 while (True):
@@ -68,12 +68,11 @@ while (True):
 {% endhighlight %}
 
 
-### Conclusions:
+## Conclusions:
 
 The idea is simple and straightforward but there is one big disadvantage to this approach. Calculating movement by comparing raw pixel values makes it overly sensitive to static, brightness changes and minor movements. These are not the movements that we like to detect. This results in a lot of false positives.
 
-Version 2: Using motion vectors
--------------------------------
+# Method 2: Using motion vectors
 
 The first thing I wanted to do is to prevent using shell commands, after digging I found the [picamera python library](http://picamera.readthedocs.org/en/release-1.8/) that achieves this requirement.
 
@@ -195,12 +194,11 @@ class CaptureHandler:
 {% endhighlight %}
 
 
-### Conclusions:
+## Conclusions:
 
 Using the motion channel was a good decision, it removes the disadvantages of brightness changes and noise in the pixel data by harnessing the power of the H.264 encoder. By using the picamera library we also removed the use of shell commands.
 
-Uploading to M2X
-----------------
+# Uploading to AT&T's M2X
 
 We now have a montage file that has a grid of all the snapshots taken when motion was detected. Next we will wrap the project up by uploading the final image to our [AT&T's M2X](https://m2x.att.com) feed.
 
@@ -278,8 +276,7 @@ motion.start()
 {% endhighlight %}
 
 
-Final Thoughts
---------------
+# Final Thoughts
 
 Using the Raspberry PI as the platform is a perfect fit for a motion detection system. The small footprint allows us to embed the Pi in a small encasing to monitor movement without bulky and expensive hardware.
 
@@ -287,13 +284,4 @@ Using the motion vector data channel from the H.264 encoder allowed us to detect
 
 With AT&T's awesome M2X python library, uploading our final montage photo to our device was possibly with just 3 lines of code. 
 
-
-
 The full source code with installation instructions can be found on [https://github.com/citrusbyte/pimotion](https://github.com/citrusbyte/pimotion).
-
-
-
-
-
-
-
