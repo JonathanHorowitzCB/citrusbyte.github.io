@@ -22,4 +22,7 @@ burlesona:
   image: "/images/team/andrew-burleson.png"
   name: "Andrew Burleson"
   link: "https://github.com/burlesona"
-
+jhenkens:
+  image: "/images/team/jelle-henkens.png"
+  name: "Jelle Henkens"
+  link: "https://github.com/jellehenkens"
