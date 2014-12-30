@@ -288,6 +288,6 @@ Using the Raspberry PI as the platform is a perfect fit for a motion detection s
 
 Using the motion vector data channel from the H.264 encoder allowed us to detect motion with a fairly accurate result. The python lib picamera made using the various Pi camera module functions a breeze.
 
-With AT&T's M2X python library, uploading our final montage photo to our device was possibly with just 3 lines of code. 
+With AT&T's M2X python library, uploading our final montage photo to our device was possible with just three (3) lines of code. 
 
-The full source code with installation instructions can be found on [https://github.com/citrusbyte/pimotion](https://github.com/citrusbyte/pimotion).
+The full source code with installation instructions can be found here: [https://github.com/citrusbyte/pimotion](https://github.com/citrusbyte/pimotion)
