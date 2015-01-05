@@ -8,5 +8,9 @@ url: "http://bits.citrusbyte.com"
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: /:title
 highlighter: pygments
+
+gems:
+  - jekyll-sitemap
+  - jekyll-redirect-from

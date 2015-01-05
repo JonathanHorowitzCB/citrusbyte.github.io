@@ -5,6 +5,7 @@ description: "A practical and comprehensive CSS styleguide to apply to frontend
 projects"
 date: 2014-11-11 12:00:00
 categories: code
+redirect_from: "/code/2014/11/11/a-practical-css-styleguide/"
 author: sborrazas
 ---
 Frontend work is usually a rather messy job if things are not organized

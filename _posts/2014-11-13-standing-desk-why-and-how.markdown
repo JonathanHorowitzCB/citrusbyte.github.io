@@ -3,6 +3,7 @@ layout: post
 title: "Standing Desk: Why and How"
 description: "Why I stand, how to make the switch, why and how I built my own standing desk."
 date: 2014-11-13 14:30:00
+redirect_from: "/etc/2014/11/13/why-standing-desk/"
 categories: etc
 author: burlesona
 ---

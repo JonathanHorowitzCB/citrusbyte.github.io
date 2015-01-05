@@ -4,6 +4,7 @@ title:  "Motion detection with Raspberry PI"
 description: "Explore motion detection using two methods: manual calculations and H.264 motion vectors."
 date:   2014-12-19 12:52:00
 categories: code 
+redirect_from: "/code/2014/12/19/pimotion/"
 author: jhenkens
 ---
 

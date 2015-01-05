@@ -4,6 +4,7 @@ title: "Extending Xcode 6 with plugins"
 description: "A quick guide of the main topics when creating an Xcode plugin"
 date: 2014-10-21 13:22:29
 categories: code
+redirect_from: "/code/2014/10/21/xcode-plugins/"
 author: lucholaf
 ---
 
