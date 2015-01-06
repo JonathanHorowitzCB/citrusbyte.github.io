@@ -16,11 +16,11 @@ During 2014 AT&T M2X enabled startup hardware makers like [Birdi](http://getbird
 
 ## But we will not stop there
 
-That was last year, and a new year is upon. We have finished our eggnog and and we are ready to change the IoT space in 2015.
+That was last year, and a new year is upon us. We have finished our holiday eggnog and we are ready to change the IoT space in 2015.
 
 Citrusbyte and AT&T are proud to announce the brand new AT&T M2X platform - deployed to production January 5th, 2015. The revamped AT&T M2X was released just in time for you to update your New Years resolution to “make the world a better place [with smarter devices!]” The new AT&T M2X boasts a completely new perspective on devices, streams, usability, API communication, and more. How did we come up with all these new changes you ask? Quite simply: we asked you, and you answered.
 
-Each of the developers who signed up, at each of the hackathons, everyone who shared their most important needs and thoughtful feedback with us provided the information to drive the AT&T M2X product to the next level. Countless customer interviews, usability tests, and feedback created a well-informed AT&T M2X product that meets the needs of the IoT developer ecosystem even better than ebfore. After a year of great progress, wonderful feedback, and hard work we are proud to deliver the new AT&T M2X platform complete with these features:
+Each of the developers who signed up, at each of the hackathons, everyone who shared their most important needs and thoughtful feedback with us provided the information to drive the AT&T M2X product to the next level. Countless customer interviews, usability tests, and feedback created a well-informed AT&T M2X product that meets the needs of the IoT developer ecosystem even better than before. After a year of great progress, wonderful feedback, and hard work we are proud to deliver the new AT&T M2X platform complete with these features:
 
 
 ### A simple, elegant, and intuitive developer portal
@@ -40,7 +40,7 @@ In addition to hundreds of other UX and platform improvements.
 
 ### Support for every language
 
-AT&T M2X is already language-agnostic, allowing you to use the API using any language you please. But we really like developers, so we thought we woudl make it as easy as possible for them to use the platform. The new AT&T M2X incudes a wide array of tutorials and client libraries (open source) for many languges
+AT&T M2X is already language-agnostic, allowing you to use the API using any language you please. But we really like developers, so we thought we would make it as easy as possible for them to use the platform. The new AT&T M2X incudes a wide array of tutorials and client libraries (open source) for many languges:
 
 * [C](https://github.com/attm2x/m2x-c)
 * [C-MQTT](https://github.com/attm2x/m2x-c-mqtt)
