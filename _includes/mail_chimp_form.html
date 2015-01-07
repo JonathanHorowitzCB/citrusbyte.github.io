@@ -1,0 +1,27 @@
+{% if page.interest != null %}
+<!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+  <form action="//citrusbyte.us9.list-manage.com/subscribe/post?u=66d1b9cb6da28b55b69c52a20&amp;id=97bd4c02a0"
+    method="post"
+    id="mc-embedded-subscribe-form"
+    name="mc-embedded-subscribe-form"
+    class="validate"
+    target="_blank"
+    novalidate>
+    <div id="mc_embed_signup_scroll">
+      <div class="mce-form-inputs">
+        <label for="mce-EMAIL">Send me more {{ page.interest }} tips at</label>
+        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email here..." required>
+        <input type="submit" value="Send me tips" name="subscribe" id="mc-embedded-subscribe" class="button">
+        <input type="checkbox" checked="checked" style="display: none;"
+          value="{{ site.data.interests[page.interest].value }}"
+          name="{{ site.data.interests[page.interest].name }}"
+          id="{{ site.data.interests[page.interest].id }}">
+      </div>
+      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div style="position: absolute; left: -5000px;"><input type="text" name="b_66d1b9cb6da28b55b69c52a20_97bd4c02a0" tabindex="-1" value=""></div>
+    </div>
+  </form>
+</div>
+<!--End mc_embed_signup-->
+{% endif %}
