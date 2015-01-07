@@ -6,6 +6,7 @@ date:   2014-12-03 09:22:29
 categories: ux user-experience ux-challenge design
 redirect_from: "/ux/user-experience/ux-challenge/design/2014/12/03/kp-org-a-case-study-in-user-experience-disaster/"
 author: wbelk
+interest: design
 ---
 A friend recently sent me an email with screenshots describing KP.org's workflows for sending a message to a doctor. He was telling me how painful the process is. Of course in my head I thought "it's 2014...how bad can it be." After reviewing his screenshots, I wasn't entirely sure it could get much worse.
 

@@ -6,6 +6,7 @@ date:   2014-12-19 12:52:00
 categories: code 
 redirect_from: "/code/2014/12/19/pimotion/"
 author: jhenkens
+interest: python
 ---
 
 Motion detection is a tricky problem to solve, the key is to balance sensitivity so that it doesn't catch light changes but still catches movements in the frame. In this article I will describe 2 methods to achieve motion detection: calculating frame differences manually and harnessing the power of the H.264 encoder. Finally, we'll store the results online using using a connected devices (Internet-of-Things) platform from AT&T.

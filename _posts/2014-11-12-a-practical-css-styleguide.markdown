@@ -7,6 +7,7 @@ date: 2014-11-11 12:00:00
 categories: code
 redirect_from: "/code/2014/11/11/a-practical-css-styleguide/"
 author: sborrazas
+interest: ruby
 ---
 Frontend work is usually a rather messy job if things are not organized
 properly from the start. A CSS styleguide is a useful tool for establishing 
