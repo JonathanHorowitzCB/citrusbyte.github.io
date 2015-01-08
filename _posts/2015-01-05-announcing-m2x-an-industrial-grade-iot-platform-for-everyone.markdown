@@ -6,7 +6,7 @@ date:   2015-01-05 12:00:00
 categories: code
 author: dkullmann
 ---
-We believe in the not-to-distant future your home will know if it should save power by turning off the lights and lowering the heat because you are away on a business trip. We believe that your cars engine will start to warm up for you as soon as your thumb touches the handle on your front door. We believe you and your family will be protected from danger with smarter smoke detectors powering a more responsive fire department and providing a wealth of air quality data to more informed parents. But most importantly: we believe our ideas about what might happen pale in comparison to the explosion of creativity and genius that the product design and development community will unleash.
+We believe in the not-too-distant future your home will know if it should save power by turning off the lights and lowering the heat because you are away on a business trip. We believe that your cars engine will start to warm up for you as soon as your thumb touches the handle on your front door. We believe you and your family will be protected from danger with smarter smoke detectors powering a more responsive fire department and providing a wealth of air quality data to more informed parents. But most importantly: we believe our ideas about what might happen pale in comparison to the explosion of creativity and genius that the product design and development community will unleash.
 
 ## 2014 - The Birth of AT&T M2X
 
