@@ -1,13 +1,16 @@
-<div class="post-byline" itemscope itemtype="http://data-vocabulary.org/Person">
-  <img class="post-author-image" src="{{ site.data.team[include.param.author].image}}">
-  <span class="post-author">
-    by
-      <span itemprop="name"><a href="{{ site.data.team[include.param.author].link }}"
-          rel="author"
-          target="_blank"
-          itemprop="url">
-        {{ site.data.team[include.param.author].name }}
-      </a></span>
+<div class="post-byline">
+  <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="post-author-image" src="{{ site.data.team[include.param.author].image}}" itemprop="image">
+    <span class="post-author">
+      by
+        <span itemprop="name"><a href="{{ site.data.team[include.param.author].link }}"
+            rel="author"
+            target="_blank"
+            itemprop="url">
+          {{ site.data.team[include.param.author].name }}</a></span>
+          <meta itemprop="jobTitle" content="{{ site.data.team[include.param.author].title }}" />
+          <meta itemprop="affiliation" content="Citrusbyte" />
+    </span>
   </span>
-  <span class="post-date">on {% include date.html %}</span>
+  on {% include date.html %}
 </div>

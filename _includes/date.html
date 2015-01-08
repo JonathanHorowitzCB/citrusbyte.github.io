@@ -1,9 +1,11 @@
-{{ include.param.date | date: "%B" }}
+<time class="post-date" datetime="{{ include.param.date | date: "%Y-%m-%d" }}" itemprop="datePublished">
+  {{ include.param.date | date: "%B" }}
 
-{% assign d = include.param.date | date: "%-d" %}
-{% case d %}
-  {% when '1' or '21' or '31' %}{{ d }}st
-  {% when '2' or '22' %}{{ d }}nd
-  {% when '3' or '23' %}{{ d }}rd
-  {% else %}{{ d }}th
-{% endcase %}, {{ include.param.date | date: "%Y" }}
+  {% assign d = include.param.date | date: "%-d" %}
+  {% case d %}
+    {% when '1' or '21' or '31' %}{{ d }}st
+    {% when '2' or '22' %}{{ d }}nd
+    {% when '3' or '23' %}{{ d }}rd
+    {% else %}{{ d }}th
+  {% endcase %}, {{ include.param.date | date: "%Y" }}
+</time>

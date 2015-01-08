@@ -1,18 +1,20 @@
 ---
 layout: default
 ---
-<div class="post">
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1>{{ page.title }}</h1>
-    <h2 class="post-intro">{{ page.description }}</h2>
+    <h1 itemprop="name">{{ page.title }}</h1>
+    <h2 class="post-intro" itemprop="description">{{ page.description }}</h2>
     {% include byline.html param=page %}
   </header>
 
-  <article class="post-content">
+  <meta content="{{ site.url }}{{ page.url }}" itemprop="url" />
+
+  <div class="post-content" itemprop="articleBody">
   {{ content }}
-  </article>
+  </div>
 
   {% include mail_chimp_form.html %}
   
-</div>
+</article>

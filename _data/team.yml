@@ -2,27 +2,34 @@ dkullmann:
   image: "/images/team/david-kullmann.png"
   name: "David Kullmann"
   link: "https://twitter.com/kullmannasaurus"
+  title: "Product Manager"
 inkel:
   image: "/images/team/leandro-lopez.png"
   name: "Leandro Lopez"
   link: "https://github.com/inkel"
+  title: "Sr. Software Engineer"
 lucholaf:
   image: "/images/team/luis-floreani.png"
   name: "Luis Floreani"
   link: "https://github.com/lucholaf"
+  title: "Sr. iOS Engineer"
 sborrazas:
   image: "/images/team/sebastian-borrazas.png"
   name: "Sebastian Borrazas"
   link: "https://github.com/sborrazas"
+  title: "Sr. Software Engineer"
 wbelk:
   image: "/images/team/william-belk.png"
   name: "William Belk"
   link: "http://twitter.com/wbelk/"
+  title: "Sr. Product Strategist"
 burlesona:
   image: "/images/team/andrew-burleson.png"
   name: "Andrew Burleson"
   link: "https://github.com/burlesona"
+  title: "Sr. Software Engineer"
 jhenkens:
   image: "/images/team/jelle-henkens.png"
   name: "Jelle Henkens"
   link: "https://github.com/jellehenkens"
+  title: "Sr. Software Engineer"
