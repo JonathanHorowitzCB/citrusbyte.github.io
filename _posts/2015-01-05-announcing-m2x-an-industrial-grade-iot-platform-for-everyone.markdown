@@ -25,7 +25,7 @@ Each of the developers who signed up, at each of the hackathons, everyone who sh
 
 ### A simple, elegant, and intuitive developer portal
 
-At Citrusbyte our entire team believes focusing on eleganant and simple solutions produces quality results. It is our mantra strewn across our web site and integrated into every piece of code we write and PSD we make. We have doubled down on elegance and simplicity for the AT&T M2X interface to make it more intuitive for first timers and more powerful for seasoned veterans. Major changes include: 
+At Citrusbyte our entire team believes focusing on elegant and simple solutions produces quality results. It is our mantra strewn across our web site and integrated into every piece of code we write and PSD we make. We have doubled down on elegance and simplicity for the AT&T M2X interface to make it more intuitive for first timers and more powerful for seasoned veterans. Major changes include: 
 
 * A revamped and Intuitive device-based navigation system
 ![Revamped Devices](/images/att-m2x/devices-screenshot.png)
@@ -80,4 +80,4 @@ Large-scale performance, data security, community development, and many other ar
 
 ## Bring it on, 2015!
 
-We could not be prouder to start 2015 armed with our client libraries, M2X API, and powerful developer portal. We have never more excited and well-poised to change the world of connected devices. But 2014 would not be complete without a special "thank you" to everyone who worked so hard to shape the Internet-of-Things, so "thank you" to everyone who joined M2X or who hackathon-ed.  Thank you to our AT&T partners and Citrusbyte co-workers. And most of all "thank you" to those of you joining the IoT movement in 2015 (and "welcome" to the M2X platform!)
+We could not be prouder to start 2015 armed with our client libraries, M2X API, and powerful developer portal. We have never been more excited and well-poised to change the world of connected devices. But 2014 would not be complete without a special "thank you" to everyone who worked so hard to shape the Internet-of-Things, so "thank you" to everyone who joined M2X or who hackathon-ed.  Thank you to our AT&T partners and Citrusbyte co-workers. And most of all "thank you" to those of you joining the IoT movement in 2015 (and "welcome" to the M2X platform!)
